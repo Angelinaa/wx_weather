@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" >
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+  //第一个页面
+<div data-role="page" id="pageone" style="background:url(night.png) 50% 0 no-repeat;background-size:cover">
+  <div data-role="content" class="ui-content" style="text-align:center">
+	<div class="text" style="font-size:40px">
+		<p>北京市</p>
+	</div>
+    <div class="image">
+		<image src="qing.png" border=0 width="100" height="100"/>
+	</div>	
+    <div class="text" style="font-size:20px">
+		<p>晴</p>
+	</div>
+	<div class="text" style="font-size:20px">
+		<p>27℃~32℃</p>
+	</div>
+    <div class="text" style="font-size:20px">
+		<p>东风微风</p>
+	</div>
+    <div class="text" style="font-size:20px">
+		<p>湿度：37%</p>
+	</div>
+    <div class="text" style="font-size:20px">
+		<p>空气质量指数：65</p>
+	</div>
+    <div class="text" style="font-size:20px">
+		<p>温馨提示：天气炎热，建议穿着短袖、短裤、短裙等清凉夏季服装</p>
+	</div>
+	
+	
+  </div>
+</div>
+  //第二个页面
+<div data-role="page" id="pagetwo">
+  <div data-role="header" >
+  <hl>欢迎来到我的主页</hl>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+  	<p>这是第二个页面，点击以下链接跳转到第一个页面。</p>
+   	<a href="#pageone">跳转到第一个页面</a>
+	<!--搜索城市的搜索框和按钮   -->
+	<div id="findBar" class="ui-grid-a">  
+		<div class="ui-block-a"><input placeholder="" data-theme="e" type="search" name="sw" id="sw" value=""  data-mini="true"/></div> 
+		<div class="ui-block-b"><button id="doFind" type="button" data-theme="b"  data-icon="search" data-mini="true">搜索城市</button></div>  
+	</div> 
+	
+	<div class="ui-grid-b" style="border: 1px solid black;">
+		<div class="ui-block-a"><span>晴转多云</span></div>
+		<div class="ui-block-b"><span>东南风2-3级</span></div>
+		<div class="ui-block-c"><span>空气质量：53</span></div>
+	</div>
+	
+	<div class="ui-grid-b" style="border: 1px solid black;">
+		<div class="ui-block-a"><div class="ui-bar ui-bar-b h300">A</div></div>
+		<div class="ui-block-b"><span>空气质量：53</span></div>
+		<div class="ui-block-c"><span>空气质量：53</span></div>
+	</div>
+  </div>
+</div>
+
+</body>
+<!--设置搜索城市的搜索框和按钮的宽度占比 -->
+<style type="text/css"> 
+	div#findBar.ui-grid-a .ui-block-a { width: 65% } 
+	div#findBar.ui-grid-a .ui-block-b { width: 35% } 
+</style>
+</html>
+  
+  
+  
+  
